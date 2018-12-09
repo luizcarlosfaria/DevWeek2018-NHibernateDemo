@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>DevWeek2018</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevWeek2018.Data\DevWeek2018.Data.csproj" />
+    <ProjectReference Include="..\DevWeek2018.Entities\DevWeek2018.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

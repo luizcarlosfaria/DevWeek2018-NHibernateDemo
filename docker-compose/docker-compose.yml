@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  mssql:
+    container_name: mssql
+    image: luizcarlosfaria/mssql-server-linux:latest
+    ports:
+      - "1433:1433"    
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=FzK2e49PF7dVrZvjVa7CKpAt
+      - MSSQL_DATABASE=DemoDB
+      - MSSQL_DATABASE_COLLATE=SQL_Latin1_General_CP1_CS_AS
+      - MSSQL_USER=devweekuser
+      - MSSQL_PASSWORD=devweekpwd
